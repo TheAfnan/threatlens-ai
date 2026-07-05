@@ -1,4 +1,2 @@
-import express from 'express';
-const app = express();
-app.all('*', (req, res) => res.json({ ok: true, msg: 'Isolated function deployed', url: req.url }));
+import app from '../server';
 export default app;
